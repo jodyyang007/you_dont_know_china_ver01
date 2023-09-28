@@ -1,18 +1,74 @@
 
 <%= render "shared/header" %>
-<div class='main'>
 
+<div class='main'>
 <%# ホームページ上部の「中国地図」部分 %>
  <div class='title-contents'>
     <h2 class='service-title'>
-      中国なんて行けましょ
+      中国なんて行きましょ
     </h2>
     <p class='service-explain'>
       Don't fear the unknown
     </p>
     <p class='service-explain'>
-      日本最大中国旅行サイト
+      日本最大中国旅行検索サイト
     </p>
   </div>
 
 <%# ホームページ上部の「中国地図」部分 %>
+
+<%# 旅行の目的一覧 %>
+<div class="site-container">
+<div class='aim-contents'>
+  <h2 class='title'>✈旅行目的✈</h2>
+  <div class='aim-info'>
+    <div class='aim-item'>
+      <h3 class='aim-name'>自然美鑑賞</h3>
+      <span>自然の美しさや風景を鑑賞する</span>
+      <div class='aim-img'>
+        <%= image_tag "aim_natural_guilin.png", class:"star-icon" %>
+      </div>
+    </div>
+
+    <div class='aim-item'>
+      <h3 class='aim-name'>歴史巡り</h3>
+      <span>歴史的な遺産や史跡を訪れる</span>
+      <div class='aim-img'>
+        <%= image_tag "aim_history_beijing.png", class:"star-icon" %>
+      </div>
+    </div>
+
+    <div class='aim-item'>
+      <h3 class='aim-name'>動植物観察</h3>
+      <span>自然の生態系や野生動植物を観察する</span>
+      <div class='aim-img'>
+        <%= image_tag "aim_animal_chengdu.png", class:"star-icon" %>
+      </div>
+    </div>
+
+    <div class='aim-item'>
+      <h3 class='aim-name'> 建築物鑑賞</h3>
+      <span>歴史的な建築物や現代建築の魅力を楽しむ</span>
+      <div class='aim-img'>
+      <%= image_tag "aim_architecture_zhouzhuang.png", class:"star-icon" %>
+     </div>
+    </div>
+
+      <div class='aim-item'>
+      <h3 class='aim-name'> グルメ体験</h3>
+      <span>地元の料理や食文化を試す</span>
+      <div class='aim-img'>
+      <%= image_tag "aim_cuisine_chongqing.png", class:"star-icon" %>
+     </div>
+    </div>
+
+      <div class='aim-item'>
+      <h3 class='aim-name'> 宗教的巡礼</h3>
+      <span>宗教的な聖地や寺院を訪れる</span>
+      <div class='aim-img'>
+      <%= image_tag "aim_region.png", class:"star-icon" %>
+     </div>
+    </div>
+  <%# /旅行の目的一覧 %>
+
+  <%= render "shared/footer" %>
