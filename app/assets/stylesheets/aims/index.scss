@@ -1,0 +1,200 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background-image: url('/assets/header01.png'); /* 画像のパスを指定 */
+  background-size: cover; /* 画像を要素に合わせて拡大縮小 */
+  background-repeat: no-repeat; /* 画像の繰り返しを無効に */
+  background-position: top center;
+}
+
+/* //ホームページ上部*/
+.top-page-header {
+  width: 100vw;
+  padding: 2vh 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-icon {
+  width: 250px;
+  height: 300px;
+}
+
+
+.header-content {
+  flex: 1; /* 可変幅の領域を取るための flex 設定 */
+}
+
+.nav {
+  flex: 1; /* 可変幅の領域を取るための flex 設定 */
+  text-align: right; /* リンクを右寄せ */
+}
+
+.lists-right {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lists-right li {
+  display: inline; /* リストアイテムをインライン表示 */
+  margin-left: 20px; /* リンク間の余白 */
+}
+
+/* ログイン/新規登録リンクのスタイル（必要に応じて調整） */
+.login,
+.sign-up {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.logout {
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+}
+
+/* //ホームページ上部*/
+
+
+
+/* //ホームページ上部の中国なんて行きましょ部分 */
+.title-contents {
+  width: 100vw;
+  background-image: image-url('header01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15vh 4vw;
+  color:rgba(224, 151, 15, 0.788);
+  text-shadow: 0 0 2px rgba(194, 167, 12, 0.9);
+}
+
+.service-title {
+  font-size: 7.5vh;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.service-explain {
+  font-size: 3.5vh;
+  line-height: 40px;
+}
+/* //ホームページ上部の中国なんて行きましょ部分 */
+
+
+
+
+/* 旅行の目的一覧 */
+
+.aim-contents {
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10vh 0;
+}
+
+.aim-contents > .title {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 1vh;
+  color: rgb(14, 47, 236);
+  font-family: 'Roboto', sans-serif;
+}
+
+.aim-contents > .subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #94db0eec;
+  font-weight: bold;
+}
+
+.aim-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* 左右の余白を均等に配置 */
+  padding: 1vh 0; /* 上下の余白を追加 */
+}
+
+.aim-lists > .list {
+  width: calc(50% - 20px); /* 2つ並べるために幅を調整 */
+  padding: 1vw;
+  background-color: #FFF;
+  margin-bottom: 1vh; /* 下にスペースを追加 */
+  margin-right: 20px; /* 各目的の右側にマージンを追加 */
+}
+
+/* 各目的の間にマージンを追加 */
+
+.aim-item {
+  
+  margin-right: 120px;/* 各目的の右側にマージンを追加 */
+  margin-bottom: 40px; /* 下にスペースを追加 */
+  margin-left: 60px;
+  display: inline-block; /* 要素を横並びにする */
+  vertical-align: top; /* 上端に揃える */
+  text-align: center;
+}
+
+.aim-img-content {
+  position: relative;
+}
+
+.aim-img {
+  width: 400px; /* 画像の幅を指定 */
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  
+}
+
+
+.sold-out {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  background-color: crimson;
+  transform: skewY(-10deg);
+}
+
+
+.aim-info {
+  display: flex;
+  justify-content: space-between; /* 要素を均等に配置 */
+  align-items: center; /* 垂直方向に中央揃え */
+  flex-wrap: wrap; /* 要素が横幅を超える場合に折り返す */
+}
+
+.site-container {
+  margin: 0 auto; /* 左右に等しいマージンを設定し、中央揃えにする */
+  max-width: 1200px; /* ページの最大幅を指定（任意の幅に変更可能） */
+  padding: 20px, 20px; /* コンテンツ内の余白を設定（左右に20pxずつ） */
+}
+
+.aim-name {
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.star-icon {
+  height: 35vh;
+  width: 45vh;
+}
