@@ -1,0 +1,94 @@
+// Place all the styles related to the natures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 自然美鑑賞の目的地リストのスタイル */
+
+/* 目的地リスト全体 */
+
+.nature-contents {
+  background-image: url('/assets/nature_header.png'); /* 画像のパスを指定 */
+  background-size: contain; /* 画像を要素に合わせて拡大縮小 */
+  background-repeat: no-repeat; /* 画像の繰り返しを無効に */
+  background-position: top center;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 0px solid #e0e0e0;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 50vh; /* 要素の高さをビューポートの高さの半分に設定 */
+  width: 100%; /* 要素の横幅をビューポートの横幅に合わせる */
+}
+
+/* タイトル */
+.nature_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center; /* テキストを中央揃えにする */
+}
+
+.nature-btn {
+  display: flex; /* 子要素を横並びに配置 */
+  align-items: center; /* 子要素を垂直方向に中央揃え */
+  justify-content: flex-start; /* 子要素を左寄せに配置 */
+}
+
+.nature-btn-icon {
+  width: 185px; /* 画像の幅 */
+  height: 150px; /* 画像の高さ */
+  margin-right: 10px; /* 画像とテキストの間隔 */
+}
+
+
+.nature-btn-text {
+  font-size: 18px; /* テキストのフォントサイズを調整 */
+  font-weight: bold; /* テキストの太字設定（必要に応じて調整） */
+  color: #333; /* テキストの色（必要に応じて調整） */
+}
+
+/* サブタイトル */
+.nature_subtitle {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* 目的地リスト */
+.nature_lists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 目的地アイテム */
+.list {
+  width: calc(33.33% - 20px); /* 3つ並べるために幅を調整 */
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* アイテム画像 */
+.item-img {
+  width: 100%;
+  max-height: 200px; /* 画像の最大高さを設定 */
+  object-fit: cover; /* 画像を領域に合わせて拡大縮小 */
+}
+
+/* アイテム名 */
+.nature-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* ナチュラルアイコン */
+.nature-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}

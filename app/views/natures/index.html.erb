@@ -1,0 +1,27 @@
+ <%# nature一覧 %>
+  <div class='nature-contents'>
+    <h2 class='nature_title'>自然美鑑賞</h2>
+    <ul class='nature_lists'>
+      <% @natures.each do |nature| %>
+      <li class='list'>
+       <%= link_to natures_path(nature) do %>
+        <div class='nature-img-content'>
+          <%= image_tag item.image, class: "item-img" %>
+        </div>
+        <div class='nature-info'>
+          <h3 class='nature-name'>
+            <%= item.title %>
+          </h3>
+            <div class='nature-btn'>
+              <%= image_tag "aim_natural_guilin.png", class:"nature-icon" %>
+            </div>
+          </div>
+        </div>
+        </li>
+        <% end %>
+        <% end %>
+     <%= link_to('/natures/new', class: 'nature-btn') do %>
+     <%= image_tag 'blog_post.png', size: '185x150', class: "nature-btn-icon" %>
+     <span class='nature-btn-text' style='font-size: 18px;'>投稿する</span>
+     <% end %>
+
