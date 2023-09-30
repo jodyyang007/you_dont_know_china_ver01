@@ -61,13 +61,9 @@ You Don't Know China
 
 | Column             | Type   | Options                 |
 | ------------------ | ------ | ------------------------|
+| nickname           | string | null: false             |
 | email              | string | null: false ,Unique:true|
 | encrypted_password | string | null: false             |
-| name               | string | null: false             |
-| profile            | text   | null: false             |
-| occupation         | text   | null: false             |
-| position           | text   | null: false             |
-
 
 ### Association
 
