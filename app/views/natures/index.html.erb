@@ -6,11 +6,11 @@
       <li class='list'>
        <%= link_to natures_path(nature) do %>
         <div class='nature-img-content'>
-          <%= image_tag item.image, class: "item-img" %>
+       <%= image_tag nature.image, class: "nature-img" %>
         </div>
         <div class='nature-info'>
           <h3 class='nature-name'>
-            <%= item.title %>
+            <%= nature.title %>
           </h3>
             <div class='nature-btn'>
               <%= image_tag "aim_natural_guilin.png", class:"nature-icon" %>

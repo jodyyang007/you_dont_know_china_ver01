@@ -1,19 +1,18 @@
-
-
-  <div class="nature-form-group">
+<%= form_with(model: @nature, local: true) do |form| %>
+  <div class="form-group">
     <label for="nature_title">タイトル:</label>
-    <input type="text" class="form-control" id="nature_title" name="nature[title]" required>
+    <%= form.text_field :title, class: "form-control", id: "nature_title", required: true %>
   </div>
 
   <div class="form-group">
-    <label for="nature_description">本文:</label>
-    <textarea class="form-control" id="nature_description" name="nature[description]" rows="4" required></textarea>
+  <label for="nature_details">本文:</label>
+  <textarea class="form-control" id="nature_details" name="nature[details]" rows="4" required></textarea>
   </div>
 
   <div class="form-group">
     <label for="nature_image">画像:</label>
-    <input type="file" class="form-control-file" id="nature_image" name="nature[image]" accept="image/*" required>
+    <%= form.file_field :image, class: "form-control-file", id: "nature_image", accept: "image/*", required: true %>
   </div>
 
   <button type="submit" class="btn btn-primary">投稿する</button>
-</form>
+<% end %>
