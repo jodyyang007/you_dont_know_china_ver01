@@ -1,5 +1,5 @@
 class NaturesController < ApplicationController
-
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   
   def index
     @natures = Nature.all
@@ -9,14 +9,14 @@ class NaturesController < ApplicationController
     @nature = Nature.new
   end
 
-def create
-  @nature = Nature.new(nature_params)
-  if @nature.save
-    redirect_to natures_path, notice: "Nature was successfully created."
-  else
-    render :new
+  def create
+    @nature = Nature.new(nature_params)
+    if @nature.save
+      redirect_to natures_path, notice: "Nature was successfully created."
+    else
+      render :new
+    end
   end
-end
 
   private
 

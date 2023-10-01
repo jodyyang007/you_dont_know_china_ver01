@@ -6,89 +6,82 @@
 /* 目的地リスト全体 */
 
 .nature-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
   background-image: url('/assets/nature_header.png'); /* 画像のパスを指定 */
   background-size: contain; /* 画像を要素に合わせて拡大縮小 */
   background-repeat: no-repeat; /* 画像の繰り返しを無効に */
   background-position: top center;
-  background-color: #ffffff;
-  padding: 20px;
-  border: 0px solid #e0e0e0;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  height: 50vh; /* 要素の高さをビューポートの高さの半分に設定 */
-  width: 100%; /* 要素の横幅をビューポートの横幅に合わせる */
+  position: absolute;
 }
 
-/* タイトル */
-.nature_title {
-  font-size: 24px;
+
+.nature-contents>.title {
+  font-size: 100vh;
+  line-height: 1.4;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-  text-align: center; /* テキストを中央揃えにする */
+ 
 }
 
-.nature-btn {
-  display: flex; /* 子要素を横並びに配置 */
-  align-items: center; /* 子要素を垂直方向に中央揃え */
-  justify-content: flex-start; /* 子要素を左寄せに配置 */
-}
-
-.nature-btn-icon {
-  width: 185px; /* 画像の幅 */
-  height: 150px; /* 画像の高さ */
-  margin-right: 10px; /* 画像とテキストの間隔 */
-}
-
-
-.nature-btn-text {
-  font-size: 18px; /* テキストのフォントサイズを調整 */
-  font-weight: bold; /* テキストの太字設定（必要に応じて調整） */
-  color: #333; /* テキストの色（必要に応じて調整） */
-}
-
-/* サブタイトル */
-.nature_subtitle {
-  font-size: 16px;
-  color: #666666;
+.nature-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
 }
 
 /* 目的地リスト */
 .nature_lists {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* 目的地アイテム */
-.list {
-  width: calc(33.33% - 20px); /* 3つ並べるために幅を調整 */
-  padding: 10px;
-  background-color: #f9f9f9;
-  margin: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+.nature-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
 }
 
-/* アイテム画像 */
-.item-img {
-  width: 100%;
-  max-height: 200px; /* 画像の最大高さを設定 */
-  object-fit: cover; /* 画像を領域に合わせて拡大縮小 */
+.nature-img-content {
+  position: relative;
+}
+
+
+.nature-img {
+  width: 33vh;
+  height: 33vh;
+  position: relative;
+}
+
+
+.nature-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
 }
 
 /* アイテム名 */
 .nature-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
-  color: #333;
+  font-size: 2.5vh;
 }
 
-/* ナチュラルアイコン */
-.nature-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
+
+
+.nature-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 60vw;
 }
+
+.nature-icon {
+  height: 25vh;
+  width: 25vh;
+  margin-right: 0.5vw;
+}
+

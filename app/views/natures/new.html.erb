@@ -1,4 +1,4 @@
-<%= form_with(model: @nature, local: true) do |form| %>
+<%= form_with(model: @nature, local: true, multipart: true) do |form| %>
   <div class="form-group">
     <label for="nature_title">タイトル:</label>
     <%= form.text_field :title, class: "form-control", id: "nature_title", required: true %>
@@ -15,4 +15,6 @@
   </div>
 
   <button type="submit" class="btn btn-primary">投稿する</button>
+   <%=link_to 'もどる', natures_path, class:"back-btn" %>
 <% end %>
+
