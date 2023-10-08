@@ -2,7 +2,7 @@ class NaturesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   
   def index
-    @natures = Nature.all
+    @natures = Nature.order(created_at: :desc).all
   end
 
   def new

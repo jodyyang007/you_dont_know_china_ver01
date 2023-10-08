@@ -1,8 +1,18 @@
+.site-footer {
+  padding: 10px 0; /* 上下のパディングを追加して高さを調整 */
+  text-align: left; 
+}
+
+.site-footer p {
+  margin: 0; /* パラグラフの上下のマージンを削除 */
+}
+
 .logo-white {
-  width: 1200px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .second-footer-logo {
-  width: 250px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
 }

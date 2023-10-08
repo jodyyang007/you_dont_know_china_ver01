@@ -1,12 +1,11 @@
-* {
-  box-sizing: border-box;
+
+.site-header {
+background-color: #edf1e2;
+height: 20vh; 
 }
 
 .top-page-header {
-  width: 100vw;
-  padding: 2vh 15vw;
-  display: flex;
-  flex-direction: column;
+  width: 100%; /* ヘッダーの幅を調整 */
 }
 
 .search-bar-contents {
@@ -15,49 +14,45 @@
   align-items: center;
 }
 
+/* ロゴのスタイル */
 .logo-icon {
-  width: 15vw;
-  margin-right: 15vw;
-}
+    max-height: 150px; /* ロゴの最大高さを設定 */
+    max-width: 200px; /* ロゴの最大幅を設定 */
+  }
 
 .search-form {
   width: 65vw;
   height: 5vh;
-  display: flex;
-  margin-bottom: 5px;
+
 }
 
-.search-form>.input-box {
-  width: 100%;
-  height: 5vh;
+.input-box {
+  width: 60%;
+  height: 100%; /* 検索ボックスの縦幅を100%に設定 */
   padding-left: 10px;
 }
+
 
 .search-button {
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  height: 5vh; /* search-form と同じ高さに設定 */
   padding: 8px;
 }
 
 .search-icon {
-  width: 100%;
+  height: 5vh; 
+  width: 5vh; 
 }
 
 .nav {
   font-size: 18px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 左右に均等に配置 */
   flex-wrap: wrap;
   width: 100%;
   padding: 1vh 0;
-}
-
-.lists-left {
-  display: flex;
-  min-width: 200px;
-
 }
 
 .category-list {
@@ -74,10 +69,9 @@
 .lists-right {
   display: flex;
   list-style: none;
-  align-items: flex-end;
+  margin-left: auto; /* 右側に寄せる */
+  align-items: center; /* 必要に応じて垂直方向に中央寄せ */
 }
-
-
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;

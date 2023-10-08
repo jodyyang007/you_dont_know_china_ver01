@@ -4,66 +4,81 @@
 /* 自然美鑑賞の目的地リストのスタイル */
 
 /* 目的地リスト全体 */
-
 .nature-contents {
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10vh 0;
-  background-image: url('/assets/nature_header.png'); /* 画像のパスを指定 */
-  background-size: contain; /* 画像を要素に合わせて拡大縮小 */
-  background-repeat: no-repeat; /* 画像の繰り返しを無効に */
+  /* 他のスタイル設定 */
+  background-image: url('/assets/nature_header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center;
-  position: absolute;
+  background-attachment: fixed;
+  display: flex; /* フレックスコンテナとして設定 */
+  flex-direction: column;
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: center; /* 水平方向に中央揃え */
+  background-color: rgba(175, 221, 114, 0.5); 
 }
 
+.nature_title
+{
+font-size: 60px; 
+text-align: center; 
+margin-bottom: 10vh;
+margin-top: 10vh;
+color: rgb(6, 61, 240);
+font-weight: bold; /* テキストを太字にする */
+}
 
 .nature-contents>.title {
   font-size: 100vh;
   line-height: 1.4;
   font-weight: bold;
- 
+  margin: 10px 0; 
 }
 
-.nature-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #3ccace;
-  font-weight: bold;
+.nature-lists > .list {
+  padding: 1vw;
+  margin: 40%;
+  margin: 100px 100px; 
+}
+
+
+.nature-lists { 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* 下部のマージンを設定 */
 }
 
 /* 目的地リスト */
-.nature_lists {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.nature-lists > .list {
+  width: calc(33.33% - 2vw); /* 幅を調整（3列に横並び） */
+  padding: 1vw; /* 余白を調整 */
+  background-color: #FFF;
+  margin: 50vw;
 }
 
-.nature-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
-}
 
 .nature-img-content {
-  position: relative;
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  flex-direction: column; /* 要素を縦に配置 */
+  text-align: center; /* テキストを中央揃え */
 }
 
-
 .nature-img {
-  width: 33vh;
-  height: 33vh;
-  position: relative;
+  width: 80vh;
+  height: 60vh;
 }
 
 
 .nature-info {
-  background-color: #FFF;
+  background-color: #ecee8b;
   color: black;
   padding: 1vw;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 550px;
+  text-align: center; 
 }
 
 /* アイテム名 */
@@ -71,17 +86,32 @@
   font-size: 2.5vh;
 }
 
+.nature-details-container {
+  max-width: 100%; /* 画像の幅に合わせるために最大幅を100%に設定 */
+  width: 100%; /* 幅を100%に設定 */
+  text-align: center; 
+}
 
+.nature-details {
+  font-size: 2vh;
+  word-wrap: break-word;
+  text-align: center;
+  overflow-wrap: break-word; /* 長い単語を改行 */
+  text-align: center; 
+}
 
 .nature-btn {
   display: flex;
   align-items: center;
   margin-left: 60vw;
-}
+  position: fixed; /* 要素を固定位置に配置 */
+  right: 20px; /* 右からの距離（お好みに合わせて調整） */
+  top: 20px; /* 上からの距離（お好みに合わせて調整） */
+  }
+
 
 .nature-icon {
-  height: 25vh;
-  width: 25vh;
+  height: 20vh;
+  width: 20vh;
   margin-right: 0.5vw;
 }
-

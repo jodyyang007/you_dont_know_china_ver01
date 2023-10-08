@@ -1,6 +1,7 @@
  <%# nature一覧 %>
+ <%= image_tag("logo-color.png", class:"second-footer-logo") %>
+ <span class='nature_title'>自然美鑑賞</span>
 <div class='nature-contents'>
-  <h2 class='nature_title'>自然美鑑賞</h2>
   <ul class='nature_lists'>
     <% @natures.each do |nature| %>
       <li class='list'>
@@ -11,19 +12,19 @@
           <% end %>
           </div>
           <div class='nature-info'>
+          <div class="nature-details-container">
             <h3 class='nature-name'>
               <%= nature.title %>
             </h3>
-            <div class='nature-btn'>
-              <%= image_tag "aim_natural_guilin.png", class: "nature-icon" %>
-            </div>
+             </div>
+           <p class="nature-details"><%= nature.details %></p>
+          
           </div>
         <% end %>
       </li>
     <% end %>
 <%= link_to('/natures/new', class: 'nature-btn') do %>
 <%= image_tag 'blog_post.png', size: '185x150', class: "nature-icon" %>
-<span class='nature-btn-text' style='font-size: 18px;'>投稿する</span>
+<span class='nature-btn-text' style='font-size: 25px;'>投稿する</span>
 <% end %>
 </ul>
-</div>
